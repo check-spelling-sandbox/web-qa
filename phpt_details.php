@@ -70,7 +70,7 @@ Plain text, multiple lines.</p>
 <pre>--DESCRIPTION--
 This test covers both valid and invalid usages of
 filter_input() with INPUT_GET and INPUT_POST data
-and several differnet filter sanitizers.</pre>
+and several different filter sanitizers.</pre>
 </p>
 <p><b>Example 1 (full):</b> <a href="sample_tests/sample001.php">sample001.phpt</a></p>
 </dd>
@@ -182,7 +182,7 @@ all three manually.</p>
 <p><b>Required:</b><br/>
 No.</p>
 <p><b>Format:</b><br/>
-A case insensitive space, newline or otherwise delimited list of one or more
+A case-insensitive space, newline or otherwise delimited list of one or more
 strings of STDIN, STDOUT, and/or STDERR.
 </p>
 <p><b>Example 1 (snippet):</b><br/>
@@ -213,7 +213,7 @@ test, this section loads them.</p>
 <p><b>Required:</b><br/>
 No.</p>
 <p><b>Format:</b><br/>
-A case sensitive newline separated list of extension names.</p>
+A case-sensitive newline separated list of extension names.</p>
 <p><b>Example 1 (snippet):</b><br/>
 <pre>--EXTENSIONS--
 curl
@@ -299,7 +299,7 @@ PHP CGI binary.</p>
 <p><b>Test Script Support:</b><br/>
 run-tests.php</p>
 <p><b>Format:</b><br/>
-Raw data optionally preceeded by a Content-Type header.</p>
+Raw data optionally preceded by a Content-Type header.</p>
 <p><b>Example 1 (snippet):</b><br/>
 <pre>--PUT--
 Content-Type: text/json
@@ -584,7 +584,7 @@ One of the FILE type sections is required.</p>
 run-tests.php</p>
 <p><b>Format:</b><br/>
 PHP source which is run through eval(). The tests destination is the value of an
-array index 'TESTS'. Also, keep in mind, you can not use a REDIRECTTEST which is
+array index 'TESTS'. Also, keep in mind, you cannot use a REDIRECTTEST which is
 being pointed to by another test which contains a REDIRECTTEST. In other words,
 no nesting.</p>
 <p>The relative path declared in 'TESTS' is relative to the base directory for the
@@ -919,7 +919,7 @@ run-tests.php</p>
 <p><b>Description:</b><br/>
 Code that is executed after a test completes. It's main purpose is to allow you
 to clean up after yourself. You might need to remove files created during the
-test or close sockets or database connections following a test. Infact, even
+test or close sockets or database connections following a test. In fact, even
 if a test fails or encounters a fatal error during the test, the code found in
 the --CLEAN-- section will still run.</p>
 <p>Code in the clean section is run in a completely different process than the

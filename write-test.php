@@ -131,7 +131,7 @@ string(32) "# hello All, I sAid hi planet! #"
 </pre>
 
 <p>As you can see the file is divided into several sections.  The TEST section holds a one line title
-of the phpt test, this should be a simple description and shouldn't ever excede one line, if you need to write more explanation
+of the phpt test, this should be a simple description and shouldn't ever exceed one line, if you need to write more explanation
 add comments in the body of the test case. The phpt files name is used when generating a .php file.  The FILE section is used
 as the body of the .php file, so don't forget to open and close your php tags.  The EXPECT section is
 the part used as a comparison to see if the test passes.  It is a
@@ -236,10 +236,10 @@ and not in the INI section. This is because of the order in which settings are c
 date_default_timezone_set() -> TZ environmental -> INI setting -> System Setting
 </pre>
 <p>
-If a TZ environmental varaibale is found the INI setting will be ignored.
+If a TZ environmental variable is found the INI setting will be ignored.
 </p>
 
-<p>Tests that run, or only have have matching EXPECT output, on 32bit
+<p>Tests that run, or only have matching EXPECT output, on 32bit
 platforms can use a SKIPIF section like:</p>
 
 <pre>
@@ -437,7 +437,7 @@ the phpt test script. </p>
 <p> When creating temporary files it is a good idea to use an extension that indicates the use of the file, eg .tmp. It's also a good
 idea to avoid using extensions that are already used for other purposes, eg .inc, .php. Similarly, it is helpful to give the temporary file a name
 that is clearly related to the test case. For example, mytest.phpt should create mytest.tmp (or mytestN.tmp, N=1, 2,3,...) then if by any
-chance the temporary file isnt't removed properly it will be obvious which test case created it.</p>
+chance the temporary file isn't removed properly it will be obvious which test case created it.</p>
 
 <p>When writing and debugging a test case with a --CLEAN-- section it is helpful to remember that the php code in the  --CLEAN-- section
 is executed separately from the code in the --FILE-- section. For example, in a test case called mytest.phpt, code from the --FILE--
@@ -479,7 +479,7 @@ preventing your test from failing due inconsistencies in the error message
 content. Alternatively you can use --EXPECTF-- and check for the message by
 replacing the path of the source of the message with "%s" and the line number
 with "%d". The end of a message in a test file "example.phpt" then looks like
-"in %sexample.php on line %d". We explicitly dropped the last path devider as
+"in %sexample.php on line %d". We explicitly dropped the last path divider as
 that is a system dependent character '/' or '\'.</p>
 
 <h3><a name="lastbit" href="#lastbit" class="anchor">#</a>Last bit</h3>
